@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=EUC-KR>
+<title>JSP 예제 : StudentBean 이용</title>
+</head>
+<body>
+<div  align="center"> 
+<form name=student method=post action=student.jsp >
+	<table cellspacing=1 cellpadding=2 >
+		<tr bgcolor=yellow> 
+			<td align=center colspan=2><b>학생 정보</b></td> 
+		</tr>
+		<tr> 
+			<td align=right>학생 아이디 : </td> 
+			<td><input type="text" name="id" value=""> </td> 
+		</tr>
+		<tr> 
+			<td align=right>학생 이름 : </td> 
+			<td><input type="text" name="name" > </td> 
+		</tr>
+		<tr> 
+			<td align=right>학생 번호 : </td> 
+			<td><input type="text" name="snum" > </td> 
+		</tr>
+		<tr> 
+			<td align=center>성별 : </td> 
+			<td>
+				<select name="sex">
+					<option value="M" SELECTED >남</option>
+					<option value="F">여</option>
+				</select>
+			</td> 
+		</tr>
+		<tr> 
+			<td align=center>태어난 해 : </td> 
+			<td><input type="text" name="year" value="1930"> </td> 
+		</tr>
+		<tr> 
+			<td align=right>암호 :</td> 
+			<td><input type="password" name="pass" value=""> </td> 
+		</tr>
+		<tr> 
+			<td align=right>전자메일 : </td> 
+			<td><input type="text" name="email" > </td> 
+		</tr>
+		
+		<tr> 
+	    	<td align="center"> <input type="submit" value="입력완료" > </td> 
+			<td align="center"> <input type="reset" value="다시쓰기" > </td>
+		</tr> 	
+	</table>
+</form>
+</div>
+</body>
+</html>

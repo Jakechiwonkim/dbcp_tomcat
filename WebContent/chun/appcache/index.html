@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html manifest="clock.appcache">
+<head> 
+<meta charset="utf-8">
+<title>시계</title>
+
+<link rel="stylesheet" href="clock.css" />
+</head>
+<body>
+<script src="clock.js"></script>
+
+<button id="btn" onclick="startClock()">시계시작</button>
+
+<script>
+window.onload = initClock();
+</script>
+
+
+<br>
+<output id="clock"></output>
+</body>
+</html>

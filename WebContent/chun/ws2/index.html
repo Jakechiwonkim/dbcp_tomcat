@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹소켓2</title>
+
+	<style>
+#console-container {
+	float: left;
+	margin-left: 15px;
+	width: 400px;
+}
+
+#console {
+	border: 1px solid #CCCCCC;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	height: 170px;
+	overflow-y: scroll;
+	padding: 5px;
+	width: 100%;
+}
+</style>
+
+</head>
+<body>
+	<script src='ws3.js'></script>
+	<script>
+		//window.addEventListener('load', function(event){ init_ws(event); });
+	</script>
+
+	<h1>웹소켓2</h1>
+
+	<input id="textID" value="뭐시당까요">
+	<button id="btnSend" onclick="init_ws(event);">전송</button>
+	<br/>
+
+	<div>
+		에코서버로부터 받은 결과:<br>
+		<div id="console-container">
+			<div id="console"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

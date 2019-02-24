@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                        web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>EL에서 함수실행</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>ELfunctions</short-name>
+	<uri>/ELfunctions</uri>
+
+	<function>
+		<description>Date 객체를 (yyyy-MM-dd(E) HH:mm:ss) 형태로 출력</description>
+		<name>format</name>
+		<function-class> form.ELDateFormat  </function-class>
+		<function-signature>
+			java.lang.String toFormat( java.util.Date )
+		</function-signature>
+	</function>
+
+
+
+
+	<function>
+		<description>a add b</description>
+		<name>add</name>
+		<function-class> form.ELOperator  </function-class>
+		<function-signature>
+			java.lang.String add( java.lang.String, java.lang.String )
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>a subtract b</description>
+		<name>subtract</name>
+		<function-class> form.ELOperator  </function-class>
+		<function-signature>
+			java.lang.String subtract( java.lang.String, java.lang.String )
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>hello world tld function</description>
+		<name>hello</name>
+		<function-class>form.ELOperator</function-class>
+		<function-signature>
+			java.lang.String hello()
+		</function-signature>
+	</function>			
+</taglib>
