@@ -1,4 +1,4 @@
-to study the book, perpect jsp(???) 
+to study the book, perpect jsp(강환수) 
 This runs at tomcat 8.5, not jetty.   
 
 echo "# dbcp_tomcat" >> README.md
